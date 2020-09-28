@@ -8,9 +8,8 @@ kong网关的官方限流插件使用计数器算法，它主要分为三种模�
 
 **注：kong的三种限流模式都没有考虑并发的情况，当限流达到临界值（max-1）时，如果此时有多条请求同时执行get_usage，计算结果全部通过。**
 
-<detials>
-<summary>核心代码：</summary>
-
+<details>
+    <summary>核心代码：</summary>
 ```java
 /**
  * 简单的速率限制器
